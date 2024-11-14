@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primary-color: #fb923c;
-  --secondary-color: #fb623c;
-  --tertiary-color: #fbc23c;
+  --primary-color: #3d405b;
+  --secondary-color: #e07a5f;
+  --tertiary-color: #f4f1de;
 }
 
 html {
@@ -71,11 +71,15 @@ img.avatar {
 #sidebar {
   background-color: var(--primary-color);
   grid-row: 1 / 3;
-  color: white;
   display: grid;
   grid-template-rows: 75px repeat(2, max-content);
   z-index: 2;
   box-shadow: -2px 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar,
+#header {
+  color: white;
 }
 
 #sidebar .links li a,
@@ -101,11 +105,11 @@ img:hover {
 
 #sidebar .links a:hover,
 .header-buttons button:hover {
-  background-color: var(--secondary-color);
+  background-color: #232535;
 }
 
 #header {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   padding: 20px 70px;
   display: grid;
   grid-template-rows: max-content max-content;
@@ -177,5 +181,5 @@ img:hover {
 }
 
 #content {
-  background-color: beige;
+  background-color: var(--tertiary-color)
 }
