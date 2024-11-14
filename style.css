@@ -22,7 +22,7 @@ a {
   text-decoration: none;
   list-style: none;
   padding-inline: 0;
-  font-weight: 700;
+  font-weight: 600;
   color: inherit;
 }
 
@@ -60,8 +60,14 @@ h2 {
   font-weight: bold;
 }
 
-.svg {
-  filter: invert(1);
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 img.avatar {
@@ -95,6 +101,14 @@ img.avatar {
   place-self: center;
   margin-top: 20px;
   gap: 16px;
+}
+
+.svg {
+  filter: invert(1);
+}
+
+#header .svg:hover {
+  filter: invert(11%) sepia(6%) saturate(3448%) hue-rotate(196deg) brightness(94%) contrast(90%);
 }
 
 #sidebar .links a:hover,
@@ -213,8 +227,11 @@ img:hover {
   background-color: white;
   border-radius: 12px;
   padding: 40px 50px 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #projects .content-card {
-  box-shadow: inset 100px 0px 0px -88px #E05F85;
+  box-shadow: inset 100px 0px 0px -88px #E05F85, rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  ;
+
 }
